@@ -5,7 +5,6 @@ import pandas as pd
 
 print("Fetching Data of Different Airports...")
 
-# Adding top 100 airports in the world
 page = request.urlopen("https://gettocenter.com/airports/top-100-airports-in-world")
 soup = bs(page, features="html.parser")
 
@@ -29,8 +28,6 @@ for r in tr:
     }
     df = df.append(row, ignore_index=True)
 
-
-# Adding top 30 airports in india
 page = request.urlopen("https://www.worlddata.info/asia/india/airports.php")
 soup = bs(page, features="html.parser")
 

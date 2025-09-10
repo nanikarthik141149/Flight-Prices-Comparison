@@ -13,14 +13,9 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 from pathlib import Path
 import os
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '=k3z-^1ov_hy5y%ebw(2e-npk@$#!(c8ix=+7so*hmw9m0c52*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -31,8 +26,6 @@ ALLOWED_HOSTS = [
     'flight-web-app.herokuapp.com',
 ]
 
-
-# Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
